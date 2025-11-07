@@ -22,6 +22,15 @@ while (true) {
     $num2 = (float)trim(fgets(STDIN));
     echo "Числа сохранены: $num1 и $num2\n";
     break;
+    
+    case '2':
+    if ($num1 == 0 && $num2 == 0) {
+        echo "Сначала введите числа (пункт 1)!\n";
+        break;
+    }
+    $result = $num1 + $num2;
+    echo "Результат: $num1 + $num2 = $result\n";
+    break;
 }
 
 ?>
