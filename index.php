@@ -16,11 +16,13 @@ while (true) {
     $choice = trim(fgets(STDIN));
     
     switch ($choice) {
-        case '0':
-            echo "Выход...\n";
-            exit;
-        default:
-            echo "Функция еще не реализована!\n";
+      case '1':
+    echo "Введите первое число: ";
+    $num1 = (float)trim(fgets(STDIN));
+    echo "Введите второе число: ";
+    $num2 = (float)trim(fgets(STDIN));
+    echo "Числа сохранены: $num1 и $num2\n";
+    break;
     }
 }
 
