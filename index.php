@@ -41,6 +41,19 @@ while (true) {
     $result = $num1 - $num2;
     echo "Результат: $num1 - $num2 = $result\n";
     break;
+    
+    case '4':
+    if ($num1 == 0 && $num2 == 0) {
+        echo "Сначала введите числа (пункт 1)!\n";
+        break;
+    }
+    if ($num2 == 0) {
+        echo "Ошибка: деление на ноль!\n";
+    } else {
+        $result = $num1 / $num2;
+        echo "Результат: $num1 / $num2 = $result\n";
+    }
+    break;
     }
 }
 
